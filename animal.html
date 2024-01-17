@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+<style>
+
+body{
+    
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+
+}
+
+.a{
+    background-image: url(a.gif);
+    height: 10px;
+    width: 10px;
+    top: 480px;
+    /* bottom: 500px; */
+    position:relative;
+    left: 100px;
+    /* animation-timing-function: ease-in-out; */
+    animation: a 5s linear infinite;
+    z-index: 1;
+}
+
+.a img{
+      width: 240px;
+}
+
+.b{
+    background-image: url(b.gif);
+    height: 10px;
+    width: 10px;
+    /* top: 500px; */
+    bottom:100px;
+    left: 250px;
+    position:relative;
+    /* transform: translateX(100px); */
+    animation: b 8s linear infinite;
+    z-index: 1;
+}
+
+.b img{
+
+      width: 120px;
+}
+
+.c{
+    background-image: url(c.gif);
+    height: 10px;
+    width: 10px;
+    bottom: 100px;
+    left: 380px;
+
+    position: relative;
+    animation: c 4s linear infinite;
+    z-index: 1;      
+}
+
+.c img{
+
+      width: 50px;
+}
+
+
+@keyframes a {
+    100%{
+        /* top: 500px; */
+        left: 10px;
+        
+        transform: translateX(1200px);
+    }
+    
+}
+@keyframes b {
+    100%{
+        /* top: 500px; */
+        left: 250px;
+        /* bottom: 800px; */
+        /* transform: translateX(600px); */
+    }
+    
+}
+@keyframes c {
+    100%{
+        /* top:200px; */
+        left: 380px;
+
+         transform: rotateX(100px);
+    }
+    
+}
+
+
+
+
+</style>    
+</head>
+<body>
+      <div class="a">
+        <img src="a.gif" alt="">
+
+        <div class="b">
+            <img src="b.gif"></div>
+
+        <div class="c">
+            <img src="c.gif"></div>   
+         
+        <div class="d"></div>    
+
+       
+        </div> 
+
+    
+    
+</body>
+</html>
